@@ -4,6 +4,6 @@
     else 
     {
     MaximoComunDivisor(b,a%b);
-    }
+    } //a
 }
 
