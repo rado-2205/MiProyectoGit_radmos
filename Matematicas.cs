@@ -1,9 +1,12 @@
 ﻿public static int MaximoComunDivisor(int a, int b)
-{
-    if (b != 0) return a;
-    else 
-    {
-    MaximoComunDivisor(b,a%b);
-    }
-}
+  {
+      while (b != 0)
+      {
+          int temp = b;
+          b = a % b;
+          a = temp;
+      }
+      return a;
+  }
+
 
